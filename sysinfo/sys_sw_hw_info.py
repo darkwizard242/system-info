@@ -4,6 +4,8 @@ import platform
 import sys
 
 
+# Defining system_details function.
+# Use of platform and sys libraries to obtain and print system, os and architecture info.
 def system_details():
     os_type = platform.system()
     print('OS Type: ' + os_type)
