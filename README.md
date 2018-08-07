@@ -27,7 +27,8 @@ Quite simply, everyone. From a student to a system engineer, from a software dev
 
 
 
-#Usage:
+# Usage:
+
 Utilizing the library is pretty simple. All you need to do is execute the `main_system.py` file. Assuming that you have already downloaded either the zip/tar or cloned the project already. Following two sections will cover the execution process.
 
    * #### Windows:
@@ -220,7 +221,7 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
 
 
 
-##Releases
+# Releases
 
 
 # License
