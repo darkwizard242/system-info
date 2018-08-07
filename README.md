@@ -16,7 +16,7 @@ Quite simply, everyone. From a student to a system engineer, from a software dev
 
     * **Windows**: You can easily install psutil library using command prompt i.e. cmd. Just open cmd, and type in `pip install psutil` .
     
-    * **Ubuntu LTS OS's**: Just run the [install_pre-reqs.sh]() script and it will take care of that for you.
+    * **Ubuntu LTS OS's**: Just run the [install_pre-reqs.bash](https://github.com/Tech-Overlord/system-info/blob/master/pre-reqs/install_pre-reqs.bash) script and it will take care of that for you.
     
     * **Note:** [psutil](https://github.com/giampaolo/psutil) library was developed by [Giampaolo Rodola](https://github.com/giampaolo). It is a cross platform library for system level information. Kudos to Giampaolo !!!
 
@@ -32,7 +32,8 @@ Quite simply, everyone. From a student to a system engineer, from a software dev
 Utilizing the library is pretty simple. All you need to do is execute the `main_system.py` file. Assuming that you have already downloaded either the zip/tar or cloned the project already. Following two sections will cover the execution process.
 
    * #### Windows:
-       1. Open a `cmd` window.
+       1. Either [Download](https://github.com/Tech-Overlord/system-info/releases/download/v1.0.0/system-info-1.0.0.zip) or clone using `git clone https://github.com/Tech-Overlord/system-info`
+       2. Open a `cmd` window.
        2. Perform `cd` into the directory where the extracted archive or project is cloned in. For instance, if you have extracted or cloned into D:\ drive. Do `cd D:\system-info`
        3. Now, change directory into the `sysinfo` package i.e. `cd sysinfo`
        4. Current directory should be: **D:\system-info\sysinfo**
@@ -77,9 +78,11 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
 
    * #### Ubuntu:
        1. Change to user's home directory, for e.g. by entering the following command: `cd ~`
-       2. Either Download using `wget ` or clone using `git clone https://github.com/Tech-Overlord/system-info`
-       3. If cloned, simply change into the root directory of the cloned project.
-       4. Do `chmod +x ~/system-info/sysinfo/*`
+       2. Either Download using `wget https://github.com/Tech-Overlord/system-info/releases/download/v1.0.0/system-info-1.0.0.zip` or clone using `git clone https://github.com/Tech-Overlord/system-info`
+            * If cloned, simply change into the root directory of the cloned project and then into the sysinfo folder, for e.g. `cd ~/system-info/sysinfo/`
+                * Do `chmod +x *`
+            * If tar was downloaded using `wget`. Extract it using the commands: `tar -zxf v1.0.0.tar.gz` and then cd into extracted directory right down to *sysinfo* package, for e.g. if the extracted directory is system-info-1.0.0, then do `cd system-info-1.0.0/sysinfo`
+                * Do `chmod +x *`. This will ensure that the scripts have **execute** permissions.
        5. Execute **main_system.py** file with the command: `python3 main_system.py`
        6. This will print a detailed output as shown below:
             ```shell
@@ -222,9 +225,71 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
 
 
 # Releases
-
+[v1.0.0](https://github.com/Tech-Overlord/system-info/releases/tag/v1.0.0)
 
 # License
 Read [License](https://github.com/Tech-Overlord/system-info/blob/master/LICENSE).
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">About Me!</h2>
+
+<div class="card">
+  <img src="‪https://thumb.mangahub.io/mn/surviving-demon.jpg" alt="Ali" style="width:100%">
+  <h1>Ali Muhammad</h1>
+  <p class="title">DevOps Engineer, 1insurer</p>
+  <p>University of Bedfordshire</p>
+  <div style="margin: 24px 0;">
+    <a href="https://www.linkedin.com/in/ali-muhammad-759791130/"><i class="fa fa-linkedin-square"></i></a>  
+    <a href="mailto:am900820@gmail.com"><i class="fa fa-google"></i></a>  
+    <a href="https://github.com/Tech-Overlord"><i class="fa fa-github-square"></i></a> 
+ </div>
+</div>
+
+</body>
+</html>
 
 NOTE: Currently in development phase!
