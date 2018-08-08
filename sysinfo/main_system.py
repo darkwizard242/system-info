@@ -6,7 +6,6 @@ import ram_gb
 import sys_sw_hw_info
 import variables_data
 import pid_info
-import ip_address
 
 
 # Assigning a variable for the purpose of specifying which data measurement function is to be used.
