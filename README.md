@@ -231,65 +231,20 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
 Read [License](https://github.com/Tech-Overlord/system-info/blob/master/LICENSE).
 
 
+# About Author
+
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-</style>
 </head>
-<body>
-
-<h2 style="text-align:center">About Me!</h2>
-
-<div class="card">
-  <img src="‪https://thumb.mangahub.io/mn/surviving-demon.jpg" alt="Ali" style="width:100%">
-  <h1>Ali Muhammad</h1>
-  <p class="title">DevOps Engineer, 1insurer</p>
-  <p>University of Bedfordshire</p>
-  <div style="margin: 24px 0;">
-    <a href="https://www.linkedin.com/in/ali-muhammad-759791130/"><i class="fa fa-linkedin-square"></i></a>  
-    <a href="mailto:am900820@gmail.com"><i class="fa fa-google"></i></a>  
-    <a href="https://github.com/Tech-Overlord"><i class="fa fa-github-square"></i></a> 
- </div>
-</div>
-
-</body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<body>
+	<div style="margin: 24px 0;">
+		<img src="https://github.com/Tech-Overlord/system-info/tree/gh-pages/img/Ali.jpeg" alt="Ali" style="width:350px;height:300px;">
+		<a href="https://www.linkedin.com/in/ali-muhammad-759791130/"><i class="fa fa-linkedin-square"></i></a>
+		<a href="mailto:am900820@gmail.com"><i class="fa fa-google"></i></a> 
+		<a href="https://github.com/Tech-Overlord"><i class="fa fa-github-square"></i></a> 
+	</div>
+	</body>
 </html>
-
+	
 NOTE: Currently in development phase!
