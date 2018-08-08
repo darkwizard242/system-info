@@ -230,21 +230,8 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
 # License
 Read [License](https://github.com/Tech-Overlord/system-info/blob/master/LICENSE).
 
+## Contact Author:
 
-# About Author
-
-<!DOCTYPE html>
-<html>
-</head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<body>
-	<div style="margin: 24px 0;">
-		<img src="https://github.com/Tech-Overlord/system-info/tree/gh-pages/img/Ali.jpg" alt="Ali" style="width:350px;height:300px;">
-		<a href="https://www.linkedin.com/in/ali-muhammad-759791130/"><i class="fa fa-linkedin-square"></i></a>
-		<a href="mailto:am900820@gmail.com"><i class="fa fa-google"></i></a> 
-		<a href="https://github.com/Tech-Overlord"><i class="fa fa-github-square"></i></a> 
-	</div>
-	</body>
-</html>
-	
-NOTE: Currently in development phase!
+1. [LinkedIn](https://www.linkedin.com/in/ali-muhammad-759791130/)
+2. [GitHub](https://github.com/Tech-Overlord)
+3. [Gmail](mailto:am900820@gmail.com)
