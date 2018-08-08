@@ -231,6 +231,7 @@ Data measurement units can be classified into the following:
  4. MegaBytes - Contains about 1024 KiloBytes.
  5. GigaBytes - Contains about 1024 MegaBytes.
 
+
 There are larger units of data measurement as well. Feel free to google and read about them. For now, I have only mentioned a few units used in this project.
 
 | Data Measurement unit(s)   | Bytes          | 
@@ -238,6 +239,7 @@ There are larger units of data measurement as well. Feel free to google and read
 | KiloByte (KB)              | 1024 Bytes     |
 | MegaByte (MB)              | 1024 KiloBytes |
 | GigaByte  (GB)             | 1024 MegaBytes |
+
 
 `main_system.py` currently will output everything using 'MB' as a data unit. However, you can eaily modify it to any of the below mentioned data measurement units. To do so, follow the following steps:
 
