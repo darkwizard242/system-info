@@ -1,18 +1,18 @@
-# INTRODUCTION:
+# 1. INTRODUCTION:
 Cross-platform scripts developed in Python3 for fetching and providing runtime CPU, RAM, PIDs, OS and system information.
 
-### Audience:
+### 1.1 Audience:
 Quite simply, everyone. From a student to a system engineer, from a software developer to an IT enthusiast. It's developed with the thought to be easily used by anyone :wink: .
 
-# Pre-requisites:
-1. **Python3**
+# 2. Pre-requisites:
+2.1. **Python3**
     * Python 3 is easily available for free to download, install and use on windows & *nix platforms. If you do not have Python 3 installed on your machine where you require the use or execution of these scripts, please feel free to use the following methods:
         
         * **Windows**: [Python3.7.0](https://www.python.org/downloads/release/python-370/) is the latest major Python release that can easily be downloaded and installed. _Note:_ Python 3.7.0 was the major release at the point of this development. Feel free to use a newer 3.x Python version if you desire.
         
         * **Ubuntu LTS OS's**:  Pre-installed on Ubuntu LTS OS's i.e. 16.04 xenial & 18.04 bionic.
 
-2. **`psutil`** library
+2.2. **`psutil`** library
 
     * **Windows**: You can easily install psutil library using command prompt i.e. cmd. Just open cmd, and type in `pip install psutil` .
     
@@ -20,14 +20,14 @@ Quite simply, everyone. From a student to a system engineer, from a software dev
     
     * **Note:** [psutil](https://github.com/giampaolo/psutil) library was developed by [Giampaolo Rodola](https://github.com/giampaolo). It is a cross platform library for system level information. Kudos to Giampaolo !!!
 
-# Tested on:
+# 3. Tested on:
 1. Windows Operating Systems (i.e. 7, 8, 8.x & 10). Works on Windows Server editions too.
 
 2. Ubuntu 16.04 & Ubuntu 18.04
 
 
 
-# Usage:
+# 4. Usage:
 
 Utilizing the library is pretty simple. All you need to do is execute the `main_system.py` file. Assuming that you have already downloaded either the zip/tar or cloned the project already. Following two sections will cover the execution process.
 
@@ -222,16 +222,86 @@ Utilizing the library is pretty simple. All you need to do is execute the `main_
             {'pid': 2046, 'name': 'python3', 'username': 'vagrant'}
             ```
 
+## 4.1 Data Measurement Unit
+
+Data measurement units can be classified into the following:
+ 1. Bit - It is the smallest unit of computer data measurement. Only has the value of *0* or *1*, which correspond to electronic values of *on* or *off*.
+ 2. Byte - Contains 8 bits and enough information to form and store at least a single ASCII character, for e.g. 'a'.
+ 3. KiloByte - Contains about 1024 Bytes.
+ 4. MegaBytes - Contains about 1024 KiloBytes.
+ 5. GigaBytes - Contains about 1024 MegaBytes.
 
 
-# Releases
+There are larger units of data measurement as well. Feel free to google and read about them. For now, I have only mentioned a few units used in this project.
+
+| Data Measurement unit(s)   | Bytes          | 
+| ---------------------------|:--------------:|
+| KiloByte (KB)              | 1024 Bytes     |
+| MegaByte (MB)              | 1024 KiloBytes |
+| GigaByte  (GB)             | 1024 MegaBytes |
+
+
+`main_system.py` currently will output everything using 'MB' as a data unit. However, you can eaily modify it to any of the below mentioned data measurement units. To do so, follow the following steps:
+
+1. Open 'main_system.py' into any editor of your choice. It contains the following code:
+ 
+     ```python
+     #! /usr/bin/env python3
+    
+    import ram_kb
+    import ram_mb
+    import ram_gb
+    import sys_sw_hw_info
+    import variables_data
+    import pid_info
+    
+    
+    # Assigning a variable for the purpose of specifying which data measurement function is to be used.
+    data_measure = variables_data.megabyte
+    
+    # Printing system, os, architecture level information using the function system_details in sys_sw_hw_info module.
+    print('\nSystem & OS level details below:\n')
+    sys_sw_hw_info.system_details()
+    print()
+    
+    # Printing IP address using the ip_addr function within the ip_address module.
+    # ip_address.ip_addr()
+    # print()
+    
+    # Printing RAM details by using if/else statements so that the data measurement is in accordance to value of
+    # data_measure variable
+    print('RAM details below: ')
+    
+    if data_measure == variables_data.kilobyte:
+        ram_kb.ram_specs()
+    elif data_measure == variables_data.megabyte:
+        ram_mb.ram_specs()
+    elif data_measure == variables_data.gigabyte:
+        ram_gb.ram_specs()
+    else:
+        print('Data Variable messed up! please check the code.')
+    
+    # Listing all of the current processes using process_info function in pid_info module.
+    print('\nCurrent process details below: \n')
+    pid_info.processes_info()
+    ```
+ 
+2. To modify the data unit type, change the value of variable `data_measure` at *line 12*. For example, if you want to switch it to gigabyte, then modify from `data_measure = variables_data.megabyte` to `data_measure = variables_data.gigabyte`. 
+
+3. That's all! Just run main_system.py again and you should see the data measurement unit related output in gigabyte. Feel free to change data measurement units to your desire.
+
+**Note:** Data measurement types have been defined in [variables_data.py](https://github.com/Tech-Overlord/system-info/blob/master/sysinfo/variables_data.py).
+
+# 5. Releases
 [v1.0.0](https://github.com/Tech-Overlord/system-info/releases/tag/v1.0.0)
 
-# License
+# 6. License
 Read [License](https://github.com/Tech-Overlord/system-info/blob/master/LICENSE).
 
-## Contact Author:
+## 7. Contact Author:
 
-1. [LinkedIn](https://www.linkedin.com/in/ali-muhammad-759791130/)
-2. [GitHub](https://github.com/Tech-Overlord)
-3. [Gmail](mailto:am900820@gmail.com)
+Feel free to contact or connect with the author on any of the following:
+
+* [LinkedIn](https://www.linkedin.com/in/ali-muhammad-759791130/)
+* [GitHub](https://github.com/Tech-Overlord)
+* [Gmail](mailto:am900820@gmail.com)
