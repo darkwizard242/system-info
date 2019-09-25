@@ -1,3 +1,8 @@
+# system-info
+
+![](https://github.com/darkwizard242/system-info/workflows/system-info/badge.svg)
+
+
 # 1. INTRODUCTION:
 Cross-platform scripts developed in Python3 for fetching and providing runtime CPU, RAM, PIDs, OS and system information.
 
