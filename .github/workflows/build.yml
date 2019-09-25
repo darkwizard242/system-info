@@ -1,9 +1,12 @@
-name: Python application
+name: system-info
 
 on:
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - feature_*
 
 jobs:
   build:
