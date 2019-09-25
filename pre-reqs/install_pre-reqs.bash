@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash -e
 
 ## This script installs pre-requisites for system-info python modules on Ubuntu's LTS version of OS machines.
 ## Easy to use script when initializing either of the systems with Vagrant or in isolation.
