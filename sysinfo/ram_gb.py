@@ -18,7 +18,7 @@ mem_used = float(mem.used/variables_data.gigabyte)
 # Defining function ram_specs that uses modules/functions from psutil library and from variables_data.
 def ram_specs():
         print()
-        print('Total memory is: ' + str(float(mem_total)) + ' GBs')
-        print('Current available memory is: ' + str(float(mem_free)) + ' GBs')
-        print('Current used memory is: ' + str(float(mem_used)) + ' GBs')
-        print('Percentage of RAM being utilized currently: ' + str(float(mem.percent)) + '%')
+        print('Total memory is: ' + str(round(float(mem_total),2)) + ' MBs')
+        print('Current available memory is: ' + str(round(float(mem_free),2)) + ' MBs')
+        print('Current used memory is: ' + str(round(float(mem_used),2)) + ' MBs')
+        print('Percentage of RAM being utilized currently: ' + str(round(float(mem.percent),2)) + '%')
