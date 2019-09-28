@@ -19,7 +19,7 @@ mem_used = float(mem.used/variables_data.megabyte)
 def ram_specs():
     # Set flow based on Threshold value.
         print()
-        print('Total memory is: ' + str(float(mem_total)) + ' MBs')
-        print('Current available memory is: ' + str(float(mem_free)) + ' MBs')
-        print('Current used memory is: ' + str(float(mem_used)) + ' MBs')
-        print('Percentage of RAM being utilized currently: ' + str(float(mem.percent)) + '%')
+        print('Total memory is: ' + str(round(float(mem_total),2)) + ' MBs')
+        print('Current available memory is: ' + str(round(float(mem_free),2)) + ' MBs')
+        print('Current used memory is: ' + str(round(float(mem_used),2)) + ' MBs')
+        print('Percentage of RAM being utilized currently: ' + str(round(float(mem.percent),2)) + '%')

@@ -11,38 +11,28 @@ then
 	echo "OS is Ubuntu." && echo
 	if [ "$(grep -Ei 'VERSION_ID="16.04"' /etc/os-release)" ];
 	then
-		echo "OS Version is 16.04 i.e. Ubuntu 16.04 xenial. Python 3.5.2 is available by default on the system." && echo
-		echo "Beginning of pre-requistes & installation of pip3 and psutil." && echo
-		echo "Performing apt-get update" && echo
-		sudo apt-get update -y
-		sleep 30
-		echo
-		echo "Printing the existing Python3's version." && echo
-		python3 -V
-		echo "Installing Python3's PIP and other tools." && echo
+		echo -e "\nOS Version is 16.04 i.e. Ubuntu 16.04 xenial. Python3 is available by default on the system."
+		echo -e "Beginning of pre-requistes & installation of pip3 and psutil."
+		echo -e "\nPerforming apt-get update\n"
+		sudo apt-get update
+		echo -e "\nPrinting the existing Python3's version:\t$(python3 --version)\n"
+		echo -e "\nInstalling Python3's PIP and other tools."
 		sudo apt-get install -y python3-pip build-essential libssl-dev libffi-dev python-dev
-		echo "Installing psutil library using pip" && echo
-		sudo pip3 install psutil	# Installing psutil
-		sleep 30
-		echo
-		echo "Installation of pre-reqs has been completed!" && echo
+		echo -e "\nInstalling psutil library using pip.\n"
+		sudo python3 -m pip install --user psutil	# Installing psutil
+		echo -e "\nInstallation of pre-reqs has been completed!\n"
 	elif [ "$(grep -Ei 'VERSION_ID="18.04"' /etc/os-release)" ];
 	then
-		echo "OS Version is 18.04 i.e. Ubuntu 18.04 bionic. Python 3.5.2 is available by default on the system." && echo
-		echo "Beginning of pre-requistes & installation of pip3 and psutil." && echo
-		echo "Performing apt-get update" && echo
-		sudo apt-get update -y
-		sleep 30
-		echo
-		echo "Printing the existing Python3's version." && echo
-		python3 -V
-		echo "Installing Python3's PIP and other tools." && echo
+		echo -e "\nOS Version is 18.04 i.e. Ubuntu 18.04 bionic. Python3 is available by default on the system."
+		echo -e "Beginning of pre-requistes & installation of pip3 and psutil.\n"
+		echo -e "Performing apt-get update\n"
+		sudo apt-get update
+		echo -e "\nPrinting the existing Python3's version:\t$(python3 --version)\n"
+		echo -e "Installing Python3's PIP and other tools.\n"
 		sudo apt-get install -y python3-pip build-essential libssl-dev libffi-dev python-dev
-		echo "Installing psutil library using pip" && echo
-		sudo pip3 install psutil	# Installing psutil
-		sleep 30
-		echo
-		echo "Installation of pre-reqs has been completed!" && echo
+		echo -e "\nInstalling psutil library using pip.\n"
+		sudo python3 -m pip install --user psutil	# Installing psutil
+		echo -e "\nInstallation of pre-reqs has been completed!\n"
 	else
 		echo "OS is not one of the LTS ubuntu versions."
 	fi
