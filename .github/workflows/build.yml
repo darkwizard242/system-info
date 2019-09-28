@@ -36,3 +36,8 @@ jobs:
     - name: Code validation by executing the code
       run: |
         python sysinfo/main_system.py
+    - name: Archive and upload artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: system-info
+        path: sysinfo
