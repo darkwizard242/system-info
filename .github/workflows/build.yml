@@ -1,4 +1,4 @@
-name: system-info
+name: build-and-verify
 
 on:
   pull_request:
@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - feature_*
+      - master
 
 jobs:
   build:
@@ -24,7 +25,7 @@ jobs:
     - name: Upgrade pip
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install --user -r requirements.txt
     - name: Lint with flake8
       run: |
         pip install flake8
@@ -35,4 +36,3 @@ jobs:
     - name: Code validation by executing the code
       run: |
         python sysinfo/main_system.py
-
