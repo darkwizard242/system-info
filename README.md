@@ -1,6 +1,6 @@
 # system-info
 
-[![Github Actions Status](https://github.com/darkwizard242/system-info/workflows/system-info/badge.svg)](https://github.com/darkwizard242/system-info/actions)
+![](https://github.com/darkwizard242/system-info/workflows/build-and-verify/badge.svg)
 
 # 1\. INTRODUCTION:
 
