@@ -1,6 +1,6 @@
 # system-info
 
-![](https://github.com/darkwizard242/system-info/workflows/build-and-verify/badge.svg)
+[![](https://github.com/darkwizard242/system-info/workflows/build-and-verify/badge.svg)](https://github.com/darkwizard242/system-info/actions)
 
 # 1\. INTRODUCTION:
 
